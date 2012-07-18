@@ -25,6 +25,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // 1 - Qotes as internal array
 	self.myQuotes = [NSArray arrayWithObjects:
                      @"Yay this rocks",
                      @"Yup, still rocking",
@@ -33,7 +35,7 @@
                      @"blablabla quote",
                      nil];
     
-    // 2 - Load movie quotes
+    // 2 - Load movie quotes from plist
     NSString *plistCatPath = [[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"plist"];
     self.movieQuotes = [[NSMutableArray arrayWithContentsOfFile:plistCatPath] copy];
 }
