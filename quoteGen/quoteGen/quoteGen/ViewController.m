@@ -108,11 +108,40 @@
            int index = (arc4random() % array_tot);
            
            NSString *quote = [[filteredArray objectAtIndex:index] valueForKey:@"quote"];
-           self.quote_text.text = [NSString stringWithFormat:@"Quotes:\n\n%@",  quote];
+           NSString *source = [[filteredArray objectAtIndex:index] valueForKey:@"source"];
+           if (![source length] == 0) {
+               quote = [NSString stringWithFormat:@"%@\n\n(%@)",  quote, source];
+           }
+           
+           
+           if ([selectedCategory isEqualToString:@"classic"]) {
+               quote = [NSString stringWithFormat:@"From Classic Movie\n\n%@",  quote];
+           }
+           if ([selectedCategory isEqualToString:@"modern"]) {
+               quote = [NSString stringWithFormat:@"From Modern Movie\n\n%@",  quote];
+           }
+           if ([selectedCategory isEqualToString:@"meme"]) {
+                quote = [NSString stringWithFormat:@"From Meme\n\n%@",  quote];
+                   
+                   
+
+           } else {
+               quote = [NSString stringWithFormat:@"Quote:\n\n%@",  quote];
+           }
+           if ([source hasPrefix:@"Phil"]) {
+               quote = [NSString stringWithFormat:@"Fry ROCKS!!\n\n%@",  quote];
+           }
+           self.quote_text.text = quote;
+           
        } else {
            self.quote_text.text = [NSString stringWithFormat:@"No quotes to display."];
        }
+       
+       
+       
    }
+    
+    
 }
 
 @end
