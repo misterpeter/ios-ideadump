@@ -3,7 +3,7 @@
 //  quoteGen
 //
 //  Created by mr.peter on 18.07.12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 misterpeter. All rights reserved.
 //
 
 #import "AppDelegate.h"
