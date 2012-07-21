@@ -94,6 +94,9 @@
        if (self.quote_opt.selectedSegmentIndex == 1) {
            selectedCategory = @"modern";
        }
+       if (self.quote_opt.selectedSegmentIndex== 3) {
+           selectedCategory = @"meme";
+       }
        
        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"category == %@", selectedCategory];
        NSArray *filteredArray = [self.movieQuotes filteredArrayUsingPredicate:predicate];
@@ -105,7 +108,7 @@
            int index = (arc4random() % array_tot);
            
            NSString *quote = [[filteredArray objectAtIndex:index] valueForKey:@"quote"];
-           self.quote_text.text = [NSString stringWithFormat:@"Movie Quote:\n\n%@",  quote];
+           self.quote_text.text = [NSString stringWithFormat:@"Quotes:\n\n%@",  quote];
        } else {
            self.quote_text.text = [NSString stringWithFormat:@"No quotes to display."];
        }

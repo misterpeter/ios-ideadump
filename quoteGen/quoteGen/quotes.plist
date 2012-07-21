@@ -4,6 +4,21 @@
     
     <array>
         <dict>
+            <key>category</key>  <string>meme</string>
+            <key>quote</key>  <string>Not sure if new code or copied...</string>
+            <key>source</key>  <string>Phillip J. Fry</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>meme</string>
+            <key>quote</key>  <string>Shut up and take my money!</string>
+            <key>source</key>  <string>Phillip J. Fry</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>meme</string>
+            <key>quote</key>  <string>Your code is bad, and you should feel bad.</string>
+            <key>source</key>  <string>Doctor Zoidberg</string>
+        </dict>
+        <dict>
             <key>category</key>  <string>classic</string>
             <key>quote</key>  <string>Frankly, my dear, I don't give a damn.</string>
             <key>source</key>  <string>Gone With the Wind</string>
