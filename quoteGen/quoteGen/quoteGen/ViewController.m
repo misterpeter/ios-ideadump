@@ -78,11 +78,11 @@
 
 -(IBAction)quote_btn_touch:(id)sender {
     
-   if (self.quote_opt.selectedSegmentIndex == 2) {
+   if (self.quote_opt.selectedSegmentIndex == 3) {
     
-    int array_tot = [self.myQuotes count];
+    int array_total = [self.myQuotes count];
     
-    int index = (arc4random() % array_tot);
+    int index = (arc4random() % array_total);
     
     NSString *my_quote = [self.myQuotes objectAtIndex:index];
     
@@ -90,50 +90,64 @@
        
    } else {
        
-       NSString *selectedCategory = @"classic";
+       NSString *selectedCategory = @"meme";
+       
        if (self.quote_opt.selectedSegmentIndex == 1) {
-           selectedCategory = @"modern";
+           selectedCategory = @"classic";
        }
-       if (self.quote_opt.selectedSegmentIndex== 3) {
-           selectedCategory = @"meme";
+       
+       if (self.quote_opt.selectedSegmentIndex== 2) {
+           selectedCategory = @"modern";
        }
        
        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"category == %@", selectedCategory];
        NSArray *filteredArray = [self.movieQuotes filteredArrayUsingPredicate:predicate];
        
-       int array_tot = [filteredArray count];
+       int array_total = [filteredArray count];
        
-       if (array_tot > 0) {
+       if (array_total > 0) {
            
-           int index = (arc4random() % array_tot);
+           int index = (arc4random() % array_total);
            
            NSString *quote = [[filteredArray objectAtIndex:index] valueForKey:@"quote"];
            NSString *source = [[filteredArray objectAtIndex:index] valueForKey:@"source"];
+           
            if (![source length] == 0) {
                quote = [NSString stringWithFormat:@"%@\n\n(%@)",  quote, source];
            }
            
            
            if ([selectedCategory isEqualToString:@"classic"]) {
-               quote = [NSString stringWithFormat:@"From Classic Movie\n\n%@",  quote];
+               quote = [NSString stringWithFormat:@"From Classic Movie:\n\n%@",  quote];
            }
+           
            if ([selectedCategory isEqualToString:@"modern"]) {
-               quote = [NSString stringWithFormat:@"From Modern Movie\n\n%@",  quote];
+               quote = [NSString stringWithFormat:@"From Modern Movie:\n\n%@",  quote];
            }
+           
            if ([selectedCategory isEqualToString:@"meme"]) {
-                quote = [NSString stringWithFormat:@"From Meme\n\n%@",  quote];
-                   
-                   
+                quote = [NSString stringWithFormat:@"From Meme:\n\n%@",  quote]; 
+           }
+           
 
-           } else {
-               quote = [NSString stringWithFormat:@"Quote:\n\n%@",  quote];
+//           How do they work???
+           
+//           else {
+//               NSException *exception = [NSException exceptionWithName: @"MissingCategorySelection"
+//                                                                reason: @"No category selected"
+//                                                              userInfo: nil];
+//               @throw exception;
+//           }
+                   
+           
+           if ([source hasPrefix:@"Doc"]) {
+               quote = [NSString stringWithFormat:@"'Why not Zoidberg?'\n\n%@",  quote];
            }
-           if ([source hasPrefix:@"Phil"]) {
-               quote = [NSString stringWithFormat:@"Fry ROCKS!!\n\n%@",  quote];
-           }
+           
            self.quote_text.text = quote;
            
        } else {
+           
            self.quote_text.text = [NSString stringWithFormat:@"No quotes to display."];
        }
        
