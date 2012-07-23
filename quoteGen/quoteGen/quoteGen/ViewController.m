@@ -76,17 +76,38 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+
+
+
 -(IBAction)quote_btn_touch:(id)sender {
     
    if (self.quote_opt.selectedSegmentIndex == 3) {
     
     int array_total = [self.myQuotes count];
-    
-    int index = (arc4random() % array_total);
-    
-    NSString *my_quote = [self.myQuotes objectAtIndex:index];
-    
-    self.quote_text.text = [NSString stringWithFormat:@"Quote:\n\n%@", my_quote];
+       
+    NSString *all_my_quotes = @"";
+
+       
+//    All quotes      
+       
+    for (int x=0; x < array_total; x++) {
+        NSString *my_quote = [self.myQuotes objectAtIndex:x];
+        all_my_quotes = [NSString stringWithFormat:@"%@\n%@\n",  all_my_quotes,my_quote];
+    }
+    self.quote_text.text = [NSString stringWithFormat:@"%@", all_my_quotes];     
+   
+       
+       
+//    Random Quote
+       
+//    int index = (arc4random() % array_total);
+//    
+//    NSString *my_quote = [self.myQuotes objectAtIndex:index];
+//    
+//    self.quote_text.text = [NSString stringWithFormat:@"Quote:\n\n%@", my_quote];
+       
+       
+       
        
    } else {
        
@@ -145,6 +166,20 @@
            }
            
            self.quote_text.text = quote;
+           
+           int movie_array_tot = [self.movieQuotes count];
+           
+           NSString *quote1 = [[filteredArray objectAtIndex:index] valueForKey:@"quote"];
+           
+           for (int x=0; x < movie_array_tot; x++) {
+               NSString *quote2 = [[movieQuotes objectAtIndex:x] valueForKey:@"quote"];
+               
+               if ([quote1 isEqualToString:quote2]) {
+                   NSMutableDictionary *itemAtIndex = (NSMutableDictionary *)[movieQuotes objectAtIndex:x];
+                   [itemAtIndex setValue:@"DONE" forKey:@"source"];
+               }
+           }
+
            
        } else {
            
