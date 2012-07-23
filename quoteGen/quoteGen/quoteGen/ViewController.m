@@ -183,6 +183,7 @@
            
        } else {
            
+           
            self.quote_text.text = [NSString stringWithFormat:@"No quotes to display."];
        }
        
