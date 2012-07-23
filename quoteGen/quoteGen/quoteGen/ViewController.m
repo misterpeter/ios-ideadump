@@ -84,7 +84,7 @@
    if (self.quote_opt.selectedSegmentIndex == 3) {
     
     int array_total = [self.myQuotes count];
-       
+              
     NSString *all_my_quotes = @"";
 
        
@@ -104,8 +104,7 @@
 //    
 //    NSString *my_quote = [self.myQuotes objectAtIndex:index];
 //    
-//    self.quote_text.text = [NSString stringWithFormat:@"Quote:\n\n%@", my_quote];
-       
+//    self.quote_text.text = [NSString stringWithFormat:@"Quote:\n\n%@", my_quote];       
        
        
        
