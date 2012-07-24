@@ -25,8 +25,10 @@
     
     imgRateDoc *img4 = [[imgRateDoc alloc] initWithTitle:@"Girl 4" rating:2 thumbImage:[UIImage imageNamed:@"imgRate4_thumb.jpg"] fullImage:[UIImage imageNamed:@"imgRate4.jpg"]];
     
+    imgRateDoc *img5 = [[imgRateDoc alloc] initWithTitle:@"Girl 5" rating:5 thumbImage:[UIImage imageNamed:@"imgRate5_thumb.jpg"] fullImage:[UIImage imageNamed:@"imgRate5.jpg"]];
     
-    NSMutableArray *imgs = [NSMutableArray arrayWithObjects:img1, img2, img3, img4, nil];
+    
+    NSMutableArray *imgs = [NSMutableArray arrayWithObjects:img1, img2, img3, img4, img5, nil];
     
     UINavigationController * navController = (UINavigationController *) self.window.rootViewController;
     MasterViewController * masterController = [navController.viewControllers objectAtIndex:0];
