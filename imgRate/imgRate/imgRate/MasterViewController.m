@@ -7,8 +7,12 @@
 //
 
 #import "MasterViewController.h"
+#import "imgRateDoc.h"
+#import "imgRateData.h"
 
 @implementation MasterViewController
+
+@synthesize imgs = _imgs;
 
 
 - (void)awakeFromNib
@@ -27,7 +31,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"Image Rating";	
 }
 
 - (void)viewDidUnload
@@ -59,9 +65,11 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return YES;
 }
+
+
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -100,5 +108,27 @@
     return YES;
 }
 */
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
+    return [self.imgs count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView
+                             dequeueReusableCellWithIdentifier:@"MyBasicCell"];
+    imgRateDoc *img = [self.imgs objectAtIndex:indexPath.row];
+    cell.textLabel.text = img.data.title;
+    cell.imageView.image = img.thumbImage;
+    return cell;
+}
 
 @end

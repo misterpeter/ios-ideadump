@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MasterViewController.h"
+#import "imgRateDoc.h"
 
 @implementation AppDelegate
 
@@ -14,6 +16,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    imgRateDoc *img1 = [[imgRateDoc alloc] initWithTitle:@"Girl 1" rating:4 thumbImage:[UIImage imageNamed:@"imgRate1_thumb.jpg"] fullImage:[UIImage imageNamed:@"imgRate1.jpg"]];
+    
+    imgRateDoc *img2 = [[imgRateDoc alloc] initWithTitle:@"Girl 2" rating:3 thumbImage:[UIImage imageNamed:@"imgRate2_thumb.jpg"] fullImage:[UIImage imageNamed:@"imgRate2.jpg"]];
+    
+    imgRateDoc *img3 = [[imgRateDoc alloc] initWithTitle:@"Girl 3" rating:5 thumbImage:[UIImage imageNamed:@"imgRate3_thumb.jpg"] fullImage:[UIImage imageNamed:@"imgRate3.jpg"]];
+    
+    imgRateDoc *img4 = [[imgRateDoc alloc] initWithTitle:@"Girl 4" rating:2 thumbImage:[UIImage imageNamed:@"imgRate4_thumb.jpg"] fullImage:[UIImage imageNamed:@"imgRate4.jpg"]];
+    
+    
+    NSMutableArray *imgs = [NSMutableArray arrayWithObjects:img1, img2, img3, img4, nil];
+    
+    UINavigationController * navController = (UINavigationController *) self.window.rootViewController;
+    MasterViewController * masterController = [navController.viewControllers objectAtIndex:0];
+    masterController.imgs = imgs;
+    
     // Override point for customization after application launch.
     return YES;
 }
