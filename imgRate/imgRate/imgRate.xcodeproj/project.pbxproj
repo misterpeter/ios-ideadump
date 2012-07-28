@@ -193,7 +193,7 @@
 		3AAC250E15BF112800165414 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 3AAC251115BF112800165414 /* Build configuration list for PBXProject "imgRate" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -356,6 +356,7 @@
 				3AAC253A15BF112800165414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
