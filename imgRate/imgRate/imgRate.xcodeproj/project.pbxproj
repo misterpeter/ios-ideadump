@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AA867201647072300404BC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8671F1647072300404BC0 /* Default-568h@2x.png */; };
+		3AA867221647076A00404BC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA867211647076A00404BC0 /* Default-568h@2x.png */; };
 		3AAC251C15BF112800165414 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAC251B15BF112800165414 /* UIKit.framework */; };
 		3AAC251E15BF112800165414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAC251D15BF112800165414 /* Foundation.framework */; };
 		3AAC252015BF112800165414 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAC251F15BF112800165414 /* CoreGraphics.framework */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3AA8671F1647072300404BC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3AA867211647076A00404BC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3AAC251715BF112800165414 /* imgRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAC251B15BF112800165414 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3AAC251D15BF112800165414 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +83,8 @@
 		3AAC250C15BF112800165414 = {
 			isa = PBXGroup;
 			children = (
+				3AA867211647076A00404BC0 /* Default-568h@2x.png */,
+				3AA8671F1647072300404BC0 /* Default-568h@2x.png */,
 				3AAC252115BF112800165414 /* imgRate */,
 				3AAC251A15BF112800165414 /* Frameworks */,
 				3AAC251815BF112800165414 /* Products */,
@@ -193,7 +199,7 @@
 		3AAC250E15BF112800165414 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = 3AAC251115BF112800165414 /* Build configuration list for PBXProject "imgRate" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -229,6 +235,8 @@
 				3AAC255515BF372700165414 /* imgRate4_thumb.jpg in Resources */,
 				3AAC255615BF372700165414 /* imgRate5.jpg in Resources */,
 				3AAC255715BF372700165414 /* imgRate5_thumb.jpg in Resources */,
+				3AA867201647072300404BC0 /* Default-568h@2x.png in Resources */,
+				3AA867221647076A00404BC0 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
