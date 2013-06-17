@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController {
+
+    //TODO
+    
+}
 
 
 

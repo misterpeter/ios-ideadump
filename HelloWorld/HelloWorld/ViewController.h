@@ -10,20 +10,15 @@
 #import "SecondViewController.h"
 
 @interface ViewController : UIViewController <UIAlertViewDelegate> {
-    IBOutlet UILabel *helloLabel;
+    
     IBOutlet UILabel *wtfLabel;
     
     NSInteger count;
     
-    
-    
 }
-
 
 - (IBAction)buttonPressed;
 
 - (IBAction)handlePan:(UIPanGestureRecognizer*) recognizer;
-
-
 
 @end

@@ -29,15 +29,12 @@
 }
 
 
-
-
-
 - (IBAction)buttonPressed {
     
     count++;
     
     wtfLabel.text = [NSString stringWithFormat:@"WTF Score\n%i", count];
-    helloLabel.text = @"Hello again...";
+
     
     if (count == 10) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"omgwtfbbq"
@@ -46,9 +43,9 @@
                                               cancelButtonTitle:@"Start over again"
                                               otherButtonTitles:nil];
         [alert show];
-        
     }
 }
+
 
 - (IBAction)handlePan:(UIPanGestureRecognizer *)recognizer {
     
@@ -56,7 +53,6 @@
     recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,
                                          recognizer.view.center.y + translation.y);
     [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
-    
 }
 
 
@@ -64,7 +60,6 @@
     
     count = 0;
     wtfLabel.text = @"WTF Score\n0";
-    helloLabel.text = @"Hello";
     
 }
 
