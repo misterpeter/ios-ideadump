@@ -106,8 +106,8 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
         <scene sceneID="6yZ-jv-EWP">
             <objects>
                 <tableViewController id="YqW-4A-66i" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Y1H-Xh-vpU">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Y1H-Xh-vpU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -115,7 +115,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                             <tableViewSection headerTitle="Choose:" id="npq-sP-iW1">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="game" textLabel="it7-7A-tjT" detailTextLabel="jzI-Wi-Rp0" style="IBUITableViewCellStyleSubtitle" id="3ex-9I-BOQ">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -150,7 +150,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                             <tableViewSection id="gmb-xH-xMg">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bacon" textLabel="fml-u2-a6i" detailTextLabel="a7N-dG-Gyy" style="IBUITableViewCellStyleSubtitle" id="82M-z4-kBh">
-                                        <rect key="frame" x="0.0" y="120" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="184" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -185,7 +185,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                             <tableViewSection id="TUR-UB-oPy">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ph1" textLabel="Xb8-cA-MVv" detailTextLabel="zlz-n0-Mi2" style="IBUITableViewCellStyleSubtitle" id="rEI-dt-mNR">
-                                        <rect key="frame" x="0.0" y="185" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="249" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -213,7 +213,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                         </view>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ph2" textLabel="KA0-eb-8O3" detailTextLabel="CRE-i7-Xq0" style="IBUITableViewCellStyleSubtitle" id="oAi-DL-FtT">
-                                        <rect key="frame" x="0.0" y="229" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="293" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -241,7 +241,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                         </view>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ph3" textLabel="CoL-lK-edq" detailTextLabel="iDH-sy-ynx" style="IBUITableViewCellStyleSubtitle" id="F2A-le-5sB">
-                                        <rect key="frame" x="0.0" y="273" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="337" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -276,10 +276,8 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                             <outlet property="delegate" destination="YqW-4A-66i" id="LR3-MX-OAC"/>
                         </connections>
                     </tableView>
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" title="Main" id="YI4-dG-xKe"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwj-om-xTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,7 +314,6 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
             <relationships>
                 <relationship kind="action" name="buttonPressed"/>
                 <relationship kind="action" name="handlePan:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="outlet" name="helloLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="wtfLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
