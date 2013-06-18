@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SecondViewController.h"
+#import "TextViewController.h"
 
-@interface ViewController : UIViewController <UIAlertViewDelegate> {
+@interface GameViewController : UIViewController <UIAlertViewDelegate> {
     
    
     IBOutlet UILabel *wtfLabel;

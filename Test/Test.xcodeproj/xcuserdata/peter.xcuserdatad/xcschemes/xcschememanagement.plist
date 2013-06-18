@@ -4,25 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HelloWorld.xcscheme</key>
+		<key>Test.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>IdeaDump.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4440B7E7176B3CF600C7EE27</key>
+		<key>D0086A381770F05D007346FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4440B808176B3CF700C7EE27</key>
+		<key>D0086A591770F05D007346FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

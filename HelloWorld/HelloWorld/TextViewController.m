@@ -6,22 +6,13 @@
 //  Copyright (c) 2013 Santhi Peter Morschhaeuser. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "TextViewController.h"
 
-@interface SecondViewController ()
+@interface TextViewController ()
 
 @end
 
-@implementation SecondViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@implementation TextViewController
 
 - (void)viewDidLoad
 {
@@ -34,7 +25,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 
 @end

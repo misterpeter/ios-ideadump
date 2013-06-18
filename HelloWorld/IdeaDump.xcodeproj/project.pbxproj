@@ -14,13 +14,17 @@
 		4440B7F8176B3CF700C7EE27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4440B7F7176B3CF700C7EE27 /* main.m */; };
 		4440B7FC176B3CF700C7EE27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4440B7FB176B3CF700C7EE27 /* AppDelegate.m */; };
 		4440B7FF176B3CF700C7EE27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4440B7FD176B3CF700C7EE27 /* Main.storyboard */; };
-		4440B802176B3CF700C7EE27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4440B801176B3CF700C7EE27 /* ViewController.m */; };
+		4440B802176B3CF700C7EE27 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4440B801176B3CF700C7EE27 /* GameViewController.m */; };
 		4440B804176B3CF700C7EE27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4440B803176B3CF700C7EE27 /* Images.xcassets */; };
 		4440B80B176B3CF700C7EE27 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4440B80A176B3CF700C7EE27 /* XCTest.framework */; };
 		4440B80C176B3CF700C7EE27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4440B7EB176B3CF600C7EE27 /* Foundation.framework */; };
 		4440B80D176B3CF700C7EE27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4440B7EF176B3CF700C7EE27 /* UIKit.framework */; };
 		4440B815176B3CF700C7EE27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4440B813176B3CF700C7EE27 /* InfoPlist.strings */; };
 		4440B817176B3CF700C7EE27 /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4440B816176B3CF700C7EE27 /* HelloWorldTests.m */; };
+		D0086A711770F1C3007346FF /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A26263176F167000580155 /* TextViewController.m */; };
+		D0086A771770F52B007346FF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0086A761770F52B007346FF /* MapViewController.m */; };
+		D0086A791770F978007346FF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0086A781770F978007346FF /* MapKit.framework */; };
+		D0086A7B1770F983007346FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0086A7A1770F983007346FF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,16 +49,20 @@
 		4440B7FA176B3CF700C7EE27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4440B7FB176B3CF700C7EE27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4440B7FE176B3CF700C7EE27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4440B800176B3CF700C7EE27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4440B801176B3CF700C7EE27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4440B800176B3CF700C7EE27 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		4440B801176B3CF700C7EE27 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		4440B803176B3CF700C7EE27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4440B809176B3CF700C7EE27 /* IdeaDumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdeaDumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4440B80A176B3CF700C7EE27 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4440B812176B3CF700C7EE27 /* IdeaDumpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IdeaDumpTests-Info.plist"; sourceTree = "<group>"; };
 		4440B814176B3CF700C7EE27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4440B816176B3CF700C7EE27 /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
-		44A26262176F167000580155 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		44A26263176F167000580155 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		44A26262176F167000580155 /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		44A26263176F167000580155 /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		D0086A751770F52B007346FF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		D0086A761770F52B007346FF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		D0086A781770F978007346FF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D0086A7A1770F983007346FF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0086A7B1770F983007346FF /* CoreLocation.framework in Frameworks */,
+				D0086A791770F978007346FF /* MapKit.framework in Frameworks */,
 				4440B7EE176B3CF700C7EE27 /* CoreGraphics.framework in Frameworks */,
 				4440B7F0176B3CF700C7EE27 /* UIKit.framework in Frameworks */,
 				4440B7EC176B3CF600C7EE27 /* Foundation.framework in Frameworks */,
@@ -103,6 +113,8 @@
 		4440B7EA176B3CF600C7EE27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0086A7A1770F983007346FF /* CoreLocation.framework */,
+				D0086A781770F978007346FF /* MapKit.framework */,
 				4440B7EB176B3CF600C7EE27 /* Foundation.framework */,
 				4440B7ED176B3CF600C7EE27 /* CoreGraphics.framework */,
 				4440B7EF176B3CF700C7EE27 /* UIKit.framework */,
@@ -117,10 +129,12 @@
 				4440B7FA176B3CF700C7EE27 /* AppDelegate.h */,
 				4440B7FB176B3CF700C7EE27 /* AppDelegate.m */,
 				4440B7FD176B3CF700C7EE27 /* Main.storyboard */,
-				4440B800176B3CF700C7EE27 /* ViewController.h */,
-				4440B801176B3CF700C7EE27 /* ViewController.m */,
-				44A26262176F167000580155 /* SecondViewController.h */,
-				44A26263176F167000580155 /* SecondViewController.m */,
+				D0086A751770F52B007346FF /* MapViewController.h */,
+				D0086A761770F52B007346FF /* MapViewController.m */,
+				4440B800176B3CF700C7EE27 /* GameViewController.h */,
+				4440B801176B3CF700C7EE27 /* GameViewController.m */,
+				44A26262176F167000580155 /* TextViewController.h */,
+				44A26263176F167000580155 /* TextViewController.m */,
 				4440B803176B3CF700C7EE27 /* Images.xcassets */,
 				4440B7F2176B3CF700C7EE27 /* Supporting Files */,
 			);
@@ -258,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4440B802176B3CF700C7EE27 /* ViewController.m in Sources */,
+				D0086A711770F1C3007346FF /* TextViewController.m in Sources */,
+				4440B802176B3CF700C7EE27 /* GameViewController.m in Sources */,
+				D0086A771770F52B007346FF /* MapViewController.m in Sources */,
 				4440B7FC176B3CF700C7EE27 /* AppDelegate.m in Sources */,
 				4440B7F8176B3CF700C7EE27 /* main.m in Sources */,
 			);

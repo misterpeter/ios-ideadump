@@ -7,14 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "GameViewController.h"
 
-@interface SecondViewController : UIViewController {
+@interface TextViewController : UIViewController
 
-    //TODO
-    
-}
-
-
+@property (weak, nonatomic) IBOutlet UITextView *textField;
 
 @end

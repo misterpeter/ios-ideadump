@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Santhi Peter Morschhaeuser. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "GameViewController.h"
 
-@interface ViewController ()
+@interface GameViewController ()
 
 @end
 
-@implementation ViewController
+@implementation GameViewController
 
 - (void)viewDidLoad
 {
