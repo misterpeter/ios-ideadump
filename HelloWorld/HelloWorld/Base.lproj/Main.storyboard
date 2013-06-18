@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="5Xm-6E-KGR">
@@ -50,11 +50,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="kpT-ry-KFw"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="view" destination="kh9-bI-dsS" id="wbH-Ot-DBc"/>
-                        <outlet property="wtfLabel" destination="frE-tT-CSf" id="XXS-Jz-kHq"/>
+                        <outlet property="wtfLabel" destination="frE-tT-CSf" id="5XR-sp-vZO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -85,9 +86,9 @@
                                 <rect key="frame" x="7" y="84" width="307" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Bacon ipsum dolor sit amet hamburger capicola meatball shoulder. Pancetta chuck ground round boudin tongue chicken ribeye frankfurter shoulder meatloaf pastrami bresaola hamburger pork belly. Chuck filet mignon venison ribeye kielbasa beef ribs jowl leberkas chicken rump. Shankle chicken corned beef ham hock tongue. Bresaola bacon pancetta, sirloin chuck ball tip hamburger rump chicken ribeye. Beef spare ribs drumstick swine, andouille tongue short ribs leberkas pork ham hock pork chop sausage shankle shank prosciutto. Pig corned beef hamburger meatloaf andouille shankle ribeye pork belly sirloin sausage ground round.
+                                <string key="text">Bacon ipsum dolor sit amet hamburger capicola meatball shoulder. Pancetta chuck ground round boudin tongue chicken ribeye frankfurter shoulder meatloaf pastrami bresaola hamburger pork belly. Chuck filet mignon venison ribeye kielbasa beef ribs jowl leberkas chicken rump. Shankle chicken corned beef ham hock tongue. Bresaola bacon pancetta, sirloin chuck ball tip hamburger rump chicken ribeye. Beef spare ribs drumstick swine, andouille tongue short ribs leberkas pork ham hock pork chop sausage shankle shank prosciutto. Pig corned beef hamburger meatloaf andouille shankle ribeye pork belly sirloin sausage ground round.
 
-Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow spare ribs pork chop pork loin jerky pork belly. Pork chop biltong venison, boudin fatback short loin cow ribeye t-bone tail pork. Flank tongue prosciutto t-bone, rump spare ribs ham ground round frankfurter. Shoulder frankfurter beef ribs doner tri-tip kielbasa ham sirloin turkey, shankle andouille. Pork tenderloin frankfurter leberkas, salami andouille shankle ball tip ribeye pork chop. Chicken filet mignon chuck tri-tip, ball tip hamburger meatball ribeye. Pastrami kielbasa sirloin venison pancetta jerky.</mutableString>
+Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow spare ribs pork chop pork loin jerky pork belly. Pork chop biltong venison, boudin fatback short loin cow ribeye t-bone tail pork. Flank tongue prosciutto t-bone, rump spare ribs ham ground round frankfurter. Shoulder frankfurter beef ribs doner tri-tip kielbasa ham sirloin turkey, shankle andouille. Pork tenderloin frankfurter leberkas, salami andouille shankle ball tip ribeye pork chop. Chicken filet mignon chuck tri-tip, ball tip hamburger meatball ribeye. Pastrami kielbasa sirloin venison pancetta jerky.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -282,14 +283,15 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwj-om-xTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1345" y="-1527"/>
+            <point key="canvasLocation" x="-1353" y="-1561"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="md5-FR-RmH">
             <objects>
                 <navigationController definesPresentationContext="YES" id="2mA-ge-rjz" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="nWy-uq-1u0">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
@@ -305,7 +307,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLQ-Cf-oGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1758" y="-1623"/>
+            <point key="canvasLocation" x="-1806" y="-1887"/>
         </scene>
     </scenes>
     <classes>
@@ -314,6 +316,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
             <relationships>
                 <relationship kind="action" name="buttonPressed"/>
                 <relationship kind="action" name="handlePan:" candidateClass="UIPanGestureRecognizer"/>
+                <relationship kind="outlet" name="helloLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="wtfLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
