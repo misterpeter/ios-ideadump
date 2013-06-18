@@ -34,23 +34,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4440B7E8176B3CF600C7EE27 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4440B7E8176B3CF600C7EE27 /* IdeaDump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaDump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4440B7EB176B3CF600C7EE27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4440B7ED176B3CF600C7EE27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4440B7EF176B3CF700C7EE27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4440B7F3176B3CF700C7EE27 /* HelloWorld-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloWorld-Info.plist"; sourceTree = "<group>"; };
+		4440B7F3176B3CF700C7EE27 /* IdeaDump-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IdeaDump-Info.plist"; sourceTree = "<group>"; };
 		4440B7F5176B3CF700C7EE27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4440B7F7176B3CF700C7EE27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4440B7F9176B3CF700C7EE27 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
+		4440B7F9176B3CF700C7EE27 /* IdeaDump-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IdeaDump-Prefix.pch"; sourceTree = "<group>"; };
 		4440B7FA176B3CF700C7EE27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4440B7FB176B3CF700C7EE27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4440B7FE176B3CF700C7EE27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4440B800176B3CF700C7EE27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4440B801176B3CF700C7EE27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4440B803176B3CF700C7EE27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4440B809176B3CF700C7EE27 /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4440B809176B3CF700C7EE27 /* IdeaDumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdeaDumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4440B80A176B3CF700C7EE27 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4440B812176B3CF700C7EE27 /* HelloWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloWorldTests-Info.plist"; sourceTree = "<group>"; };
+		4440B812176B3CF700C7EE27 /* IdeaDumpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IdeaDumpTests-Info.plist"; sourceTree = "<group>"; };
 		4440B814176B3CF700C7EE27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4440B816176B3CF700C7EE27 /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
 		44A26262176F167000580155 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 		4440B7DF176B3CF600C7EE27 = {
 			isa = PBXGroup;
 			children = (
-				4440B7F1176B3CF700C7EE27 /* HelloWorld */,
-				4440B810176B3CF700C7EE27 /* HelloWorldTests */,
+				4440B7F1176B3CF700C7EE27 /* IdeaDump */,
+				4440B810176B3CF700C7EE27 /* IdeaDumpTests */,
 				4440B7EA176B3CF600C7EE27 /* Frameworks */,
 				4440B7E9176B3CF600C7EE27 /* Products */,
 			);
@@ -94,8 +94,8 @@
 		4440B7E9176B3CF600C7EE27 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4440B7E8176B3CF600C7EE27 /* HelloWorld.app */,
-				4440B809176B3CF700C7EE27 /* HelloWorldTests.xctest */,
+				4440B7E8176B3CF600C7EE27 /* IdeaDump.app */,
+				4440B809176B3CF700C7EE27 /* IdeaDumpTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,7 +111,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4440B7F1176B3CF700C7EE27 /* HelloWorld */ = {
+		4440B7F1176B3CF700C7EE27 /* IdeaDump */ = {
 			isa = PBXGroup;
 			children = (
 				4440B7FA176B3CF700C7EE27 /* AppDelegate.h */,
@@ -124,33 +124,35 @@
 				4440B803176B3CF700C7EE27 /* Images.xcassets */,
 				4440B7F2176B3CF700C7EE27 /* Supporting Files */,
 			);
+			name = IdeaDump;
 			path = HelloWorld;
 			sourceTree = "<group>";
 		};
 		4440B7F2176B3CF700C7EE27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4440B7F3176B3CF700C7EE27 /* HelloWorld-Info.plist */,
+				4440B7F3176B3CF700C7EE27 /* IdeaDump-Info.plist */,
 				4440B7F4176B3CF700C7EE27 /* InfoPlist.strings */,
 				4440B7F7176B3CF700C7EE27 /* main.m */,
-				4440B7F9176B3CF700C7EE27 /* HelloWorld-Prefix.pch */,
+				4440B7F9176B3CF700C7EE27 /* IdeaDump-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4440B810176B3CF700C7EE27 /* HelloWorldTests */ = {
+		4440B810176B3CF700C7EE27 /* IdeaDumpTests */ = {
 			isa = PBXGroup;
 			children = (
 				4440B816176B3CF700C7EE27 /* HelloWorldTests.m */,
 				4440B811176B3CF700C7EE27 /* Supporting Files */,
 			);
+			name = IdeaDumpTests;
 			path = HelloWorldTests;
 			sourceTree = "<group>";
 		};
 		4440B811176B3CF700C7EE27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4440B812176B3CF700C7EE27 /* HelloWorldTests-Info.plist */,
+				4440B812176B3CF700C7EE27 /* IdeaDumpTests-Info.plist */,
 				4440B813176B3CF700C7EE27 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -159,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4440B7E7176B3CF600C7EE27 /* HelloWorld */ = {
+		4440B7E7176B3CF600C7EE27 /* IdeaDump */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4440B81A176B3CF700C7EE27 /* Build configuration list for PBXNativeTarget "HelloWorld" */;
+			buildConfigurationList = 4440B81A176B3CF700C7EE27 /* Build configuration list for PBXNativeTarget "IdeaDump" */;
 			buildPhases = (
 				4440B7E4176B3CF600C7EE27 /* Sources */,
 				4440B7E5176B3CF600C7EE27 /* Frameworks */,
@@ -171,14 +173,14 @@
 			);
 			dependencies = (
 			);
-			name = HelloWorld;
+			name = IdeaDump;
 			productName = HelloWorld;
-			productReference = 4440B7E8176B3CF600C7EE27 /* HelloWorld.app */;
+			productReference = 4440B7E8176B3CF600C7EE27 /* IdeaDump.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4440B808176B3CF700C7EE27 /* HelloWorldTests */ = {
+		4440B808176B3CF700C7EE27 /* IdeaDumpTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4440B81D176B3CF700C7EE27 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */;
+			buildConfigurationList = 4440B81D176B3CF700C7EE27 /* Build configuration list for PBXNativeTarget "IdeaDumpTests" */;
 			buildPhases = (
 				4440B805176B3CF700C7EE27 /* Sources */,
 				4440B806176B3CF700C7EE27 /* Frameworks */,
@@ -189,9 +191,9 @@
 			dependencies = (
 				4440B80F176B3CF700C7EE27 /* PBXTargetDependency */,
 			);
-			name = HelloWorldTests;
+			name = IdeaDumpTests;
 			productName = HelloWorldTests;
-			productReference = 4440B809176B3CF700C7EE27 /* HelloWorldTests.xctest */;
+			productReference = 4440B809176B3CF700C7EE27 /* IdeaDumpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4440B7E3176B3CF600C7EE27 /* Build configuration list for PBXProject "HelloWorld" */;
+			buildConfigurationList = 4440B7E3176B3CF600C7EE27 /* Build configuration list for PBXProject "IdeaDump" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -224,8 +226,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4440B7E7176B3CF600C7EE27 /* HelloWorld */,
-				4440B808176B3CF700C7EE27 /* HelloWorldTests */,
+				4440B7E7176B3CF600C7EE27 /* IdeaDump */,
+				4440B808176B3CF700C7EE27 /* IdeaDumpTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,7 +277,7 @@
 /* Begin PBXTargetDependency section */
 		4440B80F176B3CF700C7EE27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4440B7E7176B3CF600C7EE27 /* HelloWorld */;
+			target = 4440B7E7176B3CF600C7EE27 /* IdeaDump */;
 			targetProxy = 4440B80E176B3CF700C7EE27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -383,9 +385,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
-				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "HelloWorld/IdeaDump-Prefix.pch";
+				INFOPLIST_FILE = "HelloWorld/IdeaDump-Info.plist";
+				PRODUCT_NAME = IdeaDump;
 				PROVISIONING_PROFILE = "A2942FE1-12B8-4EB7-9EC8-44DCAF189F39";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,9 +400,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
-				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "HelloWorld/IdeaDump-Prefix.pch";
+				INFOPLIST_FILE = "HelloWorld/IdeaDump-Info.plist";
+				PRODUCT_NAME = IdeaDump;
 				PROVISIONING_PROFILE = "A2942FE1-12B8-4EB7-9EC8-44DCAF189F39";
 				WRAPPER_EXTENSION = app;
 			};
@@ -421,8 +423,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "HelloWorldTests/HelloWorldTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "HelloWorldTests/IdeaDumpTests-Info.plist";
+				PRODUCT_NAME = IdeaDumpTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -439,8 +441,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
-				INFOPLIST_FILE = "HelloWorldTests/HelloWorldTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "HelloWorldTests/IdeaDumpTests-Info.plist";
+				PRODUCT_NAME = IdeaDumpTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -449,7 +451,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4440B7E3176B3CF600C7EE27 /* Build configuration list for PBXProject "HelloWorld" */ = {
+		4440B7E3176B3CF600C7EE27 /* Build configuration list for PBXProject "IdeaDump" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4440B818176B3CF700C7EE27 /* Debug */,
@@ -458,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4440B81A176B3CF700C7EE27 /* Build configuration list for PBXNativeTarget "HelloWorld" */ = {
+		4440B81A176B3CF700C7EE27 /* Build configuration list for PBXNativeTarget "IdeaDump" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4440B81B176B3CF700C7EE27 /* Debug */,
@@ -467,7 +469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4440B81D176B3CF700C7EE27 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
+		4440B81D176B3CF700C7EE27 /* Build configuration list for PBXNativeTarget "IdeaDumpTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4440B81E176B3CF700C7EE27 /* Debug */,
