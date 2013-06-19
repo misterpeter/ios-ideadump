@@ -15,26 +15,6 @@
 
 @implementation MapViewController
 
-//- (IBAction)mapTypeChanged:(id)sender {
-//    
-//    NSInteger selectedSegment = self.segment.selectedSegmentIndex;
-//    
-//    if (selectedSegment == 0) {
-//        NSLog(@"map pushed");
-//        self.mapView.mapType = MKMapTypeStandard;
-//    }
-//    
-//    if (selectedSegment == 1) {
-//        NSLog(@"hybrid pushed");
-//        self.mapView.mapType = MKMapTypeHybrid;
-//    }
-//    
-//    if (selectedSegment == 2) {
-//        NSLog(@"satellite pushed");
-//        self.mapView.mapType = MKMapTypeSatellite;
-//    }
-//}
-
 - (IBAction)mapTypeChanged:(id)sender {
     
     switch (self.segment.selectedSegmentIndex) {
@@ -55,9 +35,6 @@
     }
 }
 
-    
-
-
 - (void)viewDidLoad
 {
     
@@ -75,9 +52,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    
-    
+- (void)viewWillAppear:(BOOL)animated {    
     
     CLLocationCoordinate2D zoomLocation;
     zoomLocation.latitude = locationManager.location.coordinate.latitude;
@@ -86,14 +61,8 @@
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.3*METERS_PER_MILE, 0.3*METERS_PER_MILE);
     
     [_mapView setRegion:viewRegion animated:YES];
-    [_mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
-    
+    [_mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];    
     
 }
-
-
-
-
-
 
 @end

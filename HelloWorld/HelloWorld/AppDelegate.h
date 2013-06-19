@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  HelloWorld
+//  IdeaDump
 //
 //  Created by peter on 14.06.13.
 //  Copyright (c) 2013 Santhi Peter Morschhaeuser. All rights reserved.

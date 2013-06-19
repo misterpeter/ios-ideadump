@@ -1,6 +1,6 @@
 //
 //  SecondViewController.m
-//  HelloWorld
+//  IdeaDump
 //
 //  Created by peter on 17.06.13.
 //  Copyright (c) 2013 Santhi Peter Morschhaeuser. All rights reserved.
@@ -18,26 +18,22 @@
 @synthesize textViewLabel;
 
 - (IBAction)saveText
-{
-   
+{   
     
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString *path = [documentsDirectory stringByAppendingPathComponent:@"myfile.plist"];
     NSError *error = nil;
     
-    NSString *ttext = textView.text;
-    if (![ttext writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:&error]) {
+    NSString *text = textView.text;
+    if (![text writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:&error]) {
         NSLog(@"Error saving - %@", error);
-    
-    
     }
-    [textView resignFirstResponder];
     
+    [textView resignFirstResponder];
 }
 
 - (void) readFromPlist {
-    
-    
+   
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString *path = [documentsDirectory stringByAppendingPathComponent:@"myfile.plist"];
     NSError *error = nil;
@@ -46,13 +42,10 @@
     if (!text) {
         NSLog(@"Error reading - %@", error);
     }
+    
     textView.text = text;
     
-   
-    
 }
-
-
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
@@ -61,17 +54,12 @@
     
 }
 
-
-
-
-
 - (void)viewDidLoad
 {
     textViewLabel.text = @"Enter your Text here:";
     [self readFromPlist];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 	
 }
 
@@ -80,9 +68,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
-
 
 @end

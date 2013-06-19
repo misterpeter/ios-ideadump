@@ -12,10 +12,8 @@
 
 @interface MapViewController : UIViewController {
 
-
     IBOutlet CLLocationManager *locationManager;
-    
-    
+
 }
 
 - (IBAction)mapTypeChanged:(id)sender;

@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  HelloWorld
+//  IdeaDump
 //
 //  Created by peter on 14.06.13.
 //  Copyright (c) 2013 Santhi Peter Morschhaeuser. All rights reserved.
@@ -34,7 +34,6 @@
     count++;
     
     wtfLabel.text = [NSString stringWithFormat:@"WTF Score\n%i", count];
-
     
     if (count == 10) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"omgwtfbbq"

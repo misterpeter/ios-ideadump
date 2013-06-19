@@ -20,7 +20,7 @@
 		4440B80C176B3CF700C7EE27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4440B7EB176B3CF600C7EE27 /* Foundation.framework */; };
 		4440B80D176B3CF700C7EE27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4440B7EF176B3CF700C7EE27 /* UIKit.framework */; };
 		4440B815176B3CF700C7EE27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4440B813176B3CF700C7EE27 /* InfoPlist.strings */; };
-		4440B817176B3CF700C7EE27 /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4440B816176B3CF700C7EE27 /* HelloWorldTests.m */; };
+		4440B817176B3CF700C7EE27 /* IdeaDumpTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4440B816176B3CF700C7EE27 /* IdeaDumpTest.m */; };
 		D0086A711770F1C3007346FF /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A26263176F167000580155 /* TextViewController.m */; };
 		D0086A771770F52B007346FF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0086A761770F52B007346FF /* MapViewController.m */; };
 		D0086A791770F978007346FF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0086A781770F978007346FF /* MapKit.framework */; };
@@ -56,7 +56,7 @@
 		4440B80A176B3CF700C7EE27 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4440B812176B3CF700C7EE27 /* IdeaDumpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IdeaDumpTests-Info.plist"; sourceTree = "<group>"; };
 		4440B814176B3CF700C7EE27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4440B816176B3CF700C7EE27 /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		4440B816176B3CF700C7EE27 /* IdeaDumpTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdeaDumpTest.m; sourceTree = "<group>"; };
 		44A26262176F167000580155 /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		44A26263176F167000580155 /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		D0086A751770F52B007346FF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		4440B810176B3CF700C7EE27 /* IdeaDumpTests */ = {
 			isa = PBXGroup;
 			children = (
-				4440B816176B3CF700C7EE27 /* HelloWorldTests.m */,
+				4440B816176B3CF700C7EE27 /* IdeaDumpTest.m */,
 				4440B811176B3CF700C7EE27 /* Supporting Files */,
 			);
 			name = IdeaDumpTests;
@@ -284,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4440B817176B3CF700C7EE27 /* HelloWorldTests.m in Sources */,
+				4440B817176B3CF700C7EE27 /* IdeaDumpTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
