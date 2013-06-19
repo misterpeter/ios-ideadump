@@ -13,9 +13,14 @@
 @interface MapViewController : UIViewController {
 
 
-IBOutlet CLLocationManager *locationManager;
+    IBOutlet CLLocationManager *locationManager;
+    
     
 }
+
+- (IBAction)mapTypeChanged:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 

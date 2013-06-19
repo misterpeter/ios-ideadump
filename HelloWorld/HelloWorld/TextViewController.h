@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "GameViewController.h"
 
-@interface TextViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@interface TextViewController : UIViewController <UITextViewDelegate>
+@property (retain, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UILabel *textViewLabel;
+
+
 
 
 

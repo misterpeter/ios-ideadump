@@ -15,6 +15,49 @@
 
 @implementation MapViewController
 
+//- (IBAction)mapTypeChanged:(id)sender {
+//    
+//    NSInteger selectedSegment = self.segment.selectedSegmentIndex;
+//    
+//    if (selectedSegment == 0) {
+//        NSLog(@"map pushed");
+//        self.mapView.mapType = MKMapTypeStandard;
+//    }
+//    
+//    if (selectedSegment == 1) {
+//        NSLog(@"hybrid pushed");
+//        self.mapView.mapType = MKMapTypeHybrid;
+//    }
+//    
+//    if (selectedSegment == 2) {
+//        NSLog(@"satellite pushed");
+//        self.mapView.mapType = MKMapTypeSatellite;
+//    }
+//}
+
+- (IBAction)mapTypeChanged:(id)sender {
+    
+    switch (self.segment.selectedSegmentIndex) {
+        case 0:
+            NSLog(@"map pushed");
+            self.mapView.mapType = MKMapTypeStandard;
+            break;
+        case 1:
+            NSLog(@"hybrid pushed");
+            self.mapView.mapType = MKMapTypeHybrid;
+            break;
+        case 2:
+            NSLog(@"satellite pushed");
+            self.mapView.mapType = MKMapTypeSatellite;
+            break;
+        default:
+            break;
+    }
+}
+
+    
+
+
 - (void)viewDidLoad
 {
     
@@ -34,6 +77,8 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
+    
+    
     CLLocationCoordinate2D zoomLocation;
     zoomLocation.latitude = locationManager.location.coordinate.latitude;
     zoomLocation.longitude= locationManager.location.coordinate.longitude;
@@ -41,16 +86,11 @@
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.3*METERS_PER_MILE, 0.3*METERS_PER_MILE);
     
     [_mapView setRegion:viewRegion animated:YES];
-    
-    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
-    point.coordinate = zoomLocation;
-    point.title = @"Where am I?";
-    point.subtitle = @"I am here!";
-    
-    [_mapView addAnnotation:point];
+    [_mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
     
     
 }
+
 
 
 
