@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8sa-1L-z0x">
-                                <rect key="frame" x="7" y="148" width="307" height="400"/>
+                                <rect key="frame" x="8" y="148" width="307" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Bacon ipsum dolor sit amet hamburger capicola meatball shoulder. Pancetta chuck ground round boudin tongue chicken ribeye frankfurter shoulder meatloaf pastrami bresaola hamburger pork belly. Chuck filet mignon venison ribeye kielbasa beef ribs jowl leberkas chicken rump. Shankle chicken corned beef ham hock tongue. Bresaola bacon pancetta, sirloin chuck ball tip hamburger rump chicken ribeye. Beef spare ribs drumstick swine, andouille tongue short ribs leberkas pork ham hock pork chop sausage shankle shank prosciutto. Pig corned beef hamburger meatloaf andouille shankle ribeye pork belly sirloin sausage ground round.
@@ -85,9 +85,6 @@
 Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow spare ribs pork chop pork loin jerky pork belly. Pork chop biltong venison, boudin fatback short loin cow ribeye t-bone tail pork. Flank tongue prosciutto t-bone, rump spare ribs ham ground round frankfurter. Shoulder frankfurter beef ribs doner tri-tip kielbasa ham sirloin turkey, shankle andouille. Pork tenderloin frankfurter leberkas, salami andouille shankle ball tip ribeye pork chop. Chicken filet mignon chuck tri-tip, ball tip hamburger meatball ribeye. Pastrami kielbasa sirloin venison pancetta jerky.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <connections>
-                                    <outlet property="delegate" destination="bPg-EH-MHf" id="WRz-Ae-5Hj"/>
-                                </connections>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bacon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aaY-h8-lLv">
                                 <rect key="frame" x="8" y="97" width="57" height="21"/>
@@ -96,13 +93,20 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="lightTextColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="G3r-7r-Sjg">
+                                <rect key="frame" x="8" y="148" width="307" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="kdB-Pz-JFy"/>
                     <connections>
-                        <outlet property="textField" destination="8sa-1L-z0x" id="LmW-Bh-Z4s"/>
+                        <outlet property="textView" destination="G3r-7r-Sjg" id="Jg8-Ug-KTq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Y5-YE-y01" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -209,7 +213,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <segue destination="bPg-EH-MHf" kind="push" id="7SC-oP-lCZ"/>
+                                            <segue destination="bPg-EH-MHf" kind="push" id="597-0k-R9K"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -309,7 +313,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
         <class className="TextViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TextViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="textField" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
             </relationships>
         </class>
     </classes>

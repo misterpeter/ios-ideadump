@@ -10,7 +10,9 @@
 #import "GameViewController.h"
 
 @interface TextViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
-@property (weak, nonatomic) IBOutlet UITextView *textField;
+
+
 
 @end

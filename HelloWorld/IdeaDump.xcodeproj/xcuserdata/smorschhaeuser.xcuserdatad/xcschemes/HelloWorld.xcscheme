@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4440B7E7176B3CF600C7EE27"
-               BuildableName = "HelloWorld.app"
+               BuildableName = "IdeaDump.app"
                BlueprintName = "IdeaDump"
                ReferencedContainer = "container:IdeaDump.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4440B808176B3CF700C7EE27"
-               BuildableName = "HelloWorldTests.xctest"
+               BuildableName = "IdeaDumpTests.xctest"
                BlueprintName = "IdeaDumpTests"
                ReferencedContainer = "container:IdeaDump.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4440B7E7176B3CF600C7EE27"
-            BuildableName = "HelloWorld.app"
+            BuildableName = "IdeaDump.app"
             BlueprintName = "IdeaDump"
             ReferencedContainer = "container:IdeaDump.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4440B7E7176B3CF600C7EE27"
-            BuildableName = "HelloWorld.app"
+            BuildableName = "IdeaDump.app"
             BlueprintName = "IdeaDump"
             ReferencedContainer = "container:IdeaDump.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4440B7E7176B3CF600C7EE27"
-            BuildableName = "HelloWorld.app"
+            BuildableName = "IdeaDump.app"
             BlueprintName = "IdeaDump"
             ReferencedContainer = "container:IdeaDump.xcodeproj">
          </BuildableReference>

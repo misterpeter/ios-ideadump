@@ -14,10 +14,18 @@
 
 @implementation TextViewController
 
+@synthesize textView;
+
+
+
+
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view.
+    textView.text = @"BLAAAAAAA";
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,6 +33,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 
 @end
