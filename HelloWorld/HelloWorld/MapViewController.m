@@ -43,6 +43,10 @@
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     
     [super viewDidLoad];
+    
+    //MKUserTrackingBarButtonItem *buttonItem = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
+    //self.navigationItem.rightBarButtonItem = buttonItem;
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -61,7 +65,8 @@
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.3*METERS_PER_MILE, 0.3*METERS_PER_MILE);
     
     [_mapView setRegion:viewRegion animated:YES];
-    [_mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];    
+    [_mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+    [_mapView setUserTrackingMode:MKUserTrackingModeFollowWithHeading];
     
 }
 
