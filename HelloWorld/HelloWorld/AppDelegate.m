@@ -10,8 +10,10 @@
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+ 
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     // Override point for customization after application launch.
     return YES;
 }
@@ -24,6 +26,45 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    
+    
+
+        
+//    NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
+//    NSDate *today = [NSDate date];
+//    UIApplication* app = [UIApplication sharedApplication];
+//
+//    NSDateComponents *dateComponents = [calendar components:( NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit ) fromDate:today];
+//
+//    NSDateComponents *dateComps = [[NSDateComponents alloc] init];
+//    
+//    [dateComps setDay:dateComponents.day];
+//    [dateComps setMonth:dateComponents.month];
+//    [dateComps setYear:dateComponents.year];
+//    
+//    [dateComps setHour:18];
+//    [dateComps setMinute:00];
+//    [dateComps setSecond:00];
+//    
+//    NSDate *fireDate = [calendar dateFromComponents:dateComps];
+//    
+//    UILocalNotification *localNotif = [[UILocalNotification alloc] init];
+//    localNotif.repeatInterval = kCFCalendarUnitDay;
+//
+//
+//    localNotif.fireDate = fireDate;
+//    [dateComps setTimeZone:[NSTimeZone defaultTimeZone]];
+//
+//    
+//    localNotif.alertBody = @"Work is over!";
+//    localNotif.alertAction = NSLocalizedString(@"View", @"Dismiss");
+//    localNotif.soundName = @"smb.wav";
+//    
+//    //NSDictionary *infoDict = [NSDictionary dictionaryWithObject:@"Daily Notification" forKey:@"acme"];
+//    //localNotif.userInfo = infoDict;
+//    
+//    [app scheduleLocalNotification:localNotif];
+    
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
@@ -40,7 +81,11 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    
+
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 @end
