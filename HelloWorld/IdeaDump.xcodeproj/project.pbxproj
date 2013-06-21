@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44381C5D1773399000DF1143 /* smb.wav in Resources */ = {isa = PBXBuildFile; fileRef = 44381C5C1773399000DF1143 /* smb.wav */; };
 		4440B7EC176B3CF600C7EE27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4440B7EB176B3CF600C7EE27 /* Foundation.framework */; };
 		4440B7EE176B3CF700C7EE27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4440B7ED176B3CF600C7EE27 /* CoreGraphics.framework */; };
 		4440B7F0176B3CF700C7EE27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4440B7EF176B3CF700C7EE27 /* UIKit.framework */; };
@@ -23,6 +22,11 @@
 		4440B815176B3CF700C7EE27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4440B813176B3CF700C7EE27 /* InfoPlist.strings */; };
 		4440B817176B3CF700C7EE27 /* IdeaDumpTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4440B816176B3CF700C7EE27 /* IdeaDumpTest.m */; };
 		44494164177345FB002D164D /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44494163177345FB002D164D /* TimeViewController.m */; };
+		44C5BFD917745ED70080DD1D /* smb.wav in Resources */ = {isa = PBXBuildFile; fileRef = 44C5BFD817745ED70080DD1D /* smb.wav */; };
+		44C5BFDB17747C2C0080DD1D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C5BFDA17747C2C0080DD1D /* AVFoundation.framework */; };
+		44C5BFDD17747D6A0080DD1D /* amazinghorse.wav in Resources */ = {isa = PBXBuildFile; fileRef = 44C5BFDC17747D6A0080DD1D /* amazinghorse.wav */; };
+		44ECC62E17747F3100CE90B2 /* chiptune.wav in Resources */ = {isa = PBXBuildFile; fileRef = 44ECC62D17747F3100CE90B2 /* chiptune.wav */; };
+		44ECC63117747FAA00CE90B2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ECC63017747FAA00CE90B2 /* TableViewController.m */; };
 		D0086A711770F1C3007346FF /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A26263176F167000580155 /* TextViewController.m */; };
 		D0086A771770F52B007346FF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0086A761770F52B007346FF /* MapViewController.m */; };
 		D0086A791770F978007346FF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0086A781770F978007346FF /* MapKit.framework */; };
@@ -40,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44381C5C1773399000DF1143 /* smb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = smb.wav; path = ../../../../Desktop/smb.wav; sourceTree = "<group>"; };
 		4440B7E8176B3CF600C7EE27 /* IdeaDump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaDump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4440B7EB176B3CF600C7EE27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4440B7ED176B3CF600C7EE27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +67,12 @@
 		44494163177345FB002D164D /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeViewController.m; path = ../TimeViewController.m; sourceTree = "<group>"; };
 		44A26262176F167000580155 /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		44A26263176F167000580155 /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		44C5BFD817745ED70080DD1D /* smb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = smb.wav; path = HelloWorld/smb.wav; sourceTree = "<group>"; };
+		44C5BFDA17747C2C0080DD1D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		44C5BFDC17747D6A0080DD1D /* amazinghorse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = amazinghorse.wav; path = HelloWorld/amazinghorse.wav; sourceTree = "<group>"; };
+		44ECC62D17747F3100CE90B2 /* chiptune.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = chiptune.wav; path = HelloWorld/chiptune.wav; sourceTree = "<group>"; };
+		44ECC62F17747FAA00CE90B2 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
+		44ECC63017747FAA00CE90B2 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
 		D0086A751770F52B007346FF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		D0086A761770F52B007346FF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		D0086A781770F978007346FF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -75,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C5BFDB17747C2C0080DD1D /* AVFoundation.framework in Frameworks */,
 				D0086A7B1770F983007346FF /* CoreLocation.framework in Frameworks */,
 				D0086A791770F978007346FF /* MapKit.framework in Frameworks */,
 				4440B7EE176B3CF700C7EE27 /* CoreGraphics.framework in Frameworks */,
@@ -103,7 +113,9 @@
 				4440B810176B3CF700C7EE27 /* IdeaDumpTests */,
 				4440B7EA176B3CF600C7EE27 /* Frameworks */,
 				4440B7E9176B3CF600C7EE27 /* Products */,
-				44381C5C1773399000DF1143 /* smb.wav */,
+				44C5BFD817745ED70080DD1D /* smb.wav */,
+				44C5BFDC17747D6A0080DD1D /* amazinghorse.wav */,
+				44ECC62D17747F3100CE90B2 /* chiptune.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +131,7 @@
 		4440B7EA176B3CF600C7EE27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44C5BFDA17747C2C0080DD1D /* AVFoundation.framework */,
 				D0086A7A1770F983007346FF /* CoreLocation.framework */,
 				D0086A781770F978007346FF /* MapKit.framework */,
 				4440B7EB176B3CF600C7EE27 /* Foundation.framework */,
@@ -135,6 +148,8 @@
 				4440B7FA176B3CF700C7EE27 /* AppDelegate.h */,
 				4440B7FB176B3CF700C7EE27 /* AppDelegate.m */,
 				4440B7FD176B3CF700C7EE27 /* Main.storyboard */,
+				44ECC62F17747FAA00CE90B2 /* TableViewController.h */,
+				44ECC63017747FAA00CE90B2 /* TableViewController.m */,
 				D0086A751770F52B007346FF /* MapViewController.h */,
 				D0086A761770F52B007346FF /* MapViewController.m */,
 				4440B800176B3CF700C7EE27 /* GameViewController.h */,
@@ -260,9 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4440B804176B3CF700C7EE27 /* Images.xcassets in Resources */,
-				44381C5D1773399000DF1143 /* smb.wav in Resources */,
+				44ECC62E17747F3100CE90B2 /* chiptune.wav in Resources */,
+				44C5BFD917745ED70080DD1D /* smb.wav in Resources */,
 				4440B7F6176B3CF700C7EE27 /* InfoPlist.strings in Resources */,
 				4440B7FF176B3CF700C7EE27 /* Main.storyboard in Resources */,
+				44C5BFDD17747D6A0080DD1D /* amazinghorse.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +303,7 @@
 				D0086A771770F52B007346FF /* MapViewController.m in Sources */,
 				4440B7FC176B3CF700C7EE27 /* AppDelegate.m in Sources */,
 				4440B7F8176B3CF700C7EE27 /* main.m in Sources */,
+				44ECC63117747FAA00CE90B2 /* TableViewController.m in Sources */,
 				44494164177345FB002D164D /* TimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

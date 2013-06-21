@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GameViewController.h"
 
 @interface TextViewController : UIViewController <UITextViewDelegate>
 

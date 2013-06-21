@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TextViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface GameViewController : UIViewController <UIAlertViewDelegate> {    
+
+@interface GameViewController : UIViewController <UIAlertViewDelegate> {
+    
+    AVAudioPlayer *audioPlayer;
    
     IBOutlet UILabel *wtfLabel;
     

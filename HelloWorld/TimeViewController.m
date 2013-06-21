@@ -18,43 +18,45 @@
 @synthesize alertMessageField;
 @synthesize alertNotification;
 
-- (void)dealloc
-{
 
-    self.datePicker = nil;
-    self.alertMessageField = nil;
-    self.alertNotification = nil;
-}
 
-- (IBAction)dismissKeyboard{
-    
+- (IBAction)dismissKeyboard
+{    
     [alertMessageField resignFirstResponder];
 }
 
-- (IBAction)addNotification {
+- (IBAction)addNotification
+{
+        
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
     
-    UILocalNotification *localNotification = [[UILocalNotification alloc] init]; 
     localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:[datePicker countDownDuration]];
-    localNotification.alertAction = NSLocalizedString(@"View", @"Dismiss");
+    localNotification.alertAction = NSLocalizedString(@"Read Message", nil);
     localNotification.soundName = @"smb.wav";
     localNotification.alertBody = [alertMessageField text];
     localNotification.hasAction = YES;
     localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber]+1;
     
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification]; 
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+    
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 
     [alertNotification setHidden:NO];
 }
 
-- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
     [self.view endEditing:YES];
-    [super touchesBegan:touches withEvent:event];
-    
+    [super touchesBegan:touches withEvent:event];   
 }
 
 - (void)viewDidLoad
 {
+    
+    
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

@@ -17,6 +17,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/amazinghorse.wav", [[NSBundle mainBundle] resourcePath]]];
+	
+	NSError *error;
+	audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    audioPlayer.volume = 0.5;
+	audioPlayer.numberOfLoops = -1;
+	
+	if (audioPlayer == nil)
+		NSLog([error description]);
+	else
+		[audioPlayer play];
+    
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
     [self restartApp];
     
