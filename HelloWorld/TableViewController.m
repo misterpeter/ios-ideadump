@@ -14,6 +14,8 @@
 
 @implementation TableViewController
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -23,7 +25,7 @@
 	NSError *error;
 	audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
     audioPlayer.volume = 0.1;
-	audioPlayer.numberOfLoops = 1;
+	audioPlayer.numberOfLoops = -1;
 	
 	if (audioPlayer == nil)
 		NSLog([error description]);
@@ -37,5 +39,24 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [audioPlayer stop];
+    audioPlayer.currentTime = 0;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    
+    [super viewWillAppear:animated];
+    [audioPlayer play];
+    
+}
+
+
+
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "GameViewController.h"
+#import "TableViewController.h"
 
 @interface GameViewController ()
 
@@ -14,8 +15,11 @@
 
 @implementation GameViewController
 
+
+
 - (void)viewDidLoad
 {
+   
     [super viewDidLoad];
     
     NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/amazinghorse.wav", [[NSBundle mainBundle] resourcePath]]];
@@ -28,12 +32,12 @@
 	if (audioPlayer == nil)
 		NSLog([error description]);
 	else
-		[audioPlayer play];
+		[audioPlayer play];    
     
+	// Do any additional setup after loading the view, typically from a nib.       
     
-    
-	// Do any additional setup after loading the view, typically from a nib.
     [self restartApp];
+    
     
 }
 
