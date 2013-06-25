@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2mA-ge-rjz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.9" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2mA-ge-rjz">
     <dependencies>
         <development version="5000" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.9"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
@@ -51,9 +51,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="kpT-ry-KFw"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="view" destination="kh9-bI-dsS" id="wbH-Ot-DBc"/>
                         <outlet property="wtfLabel" destination="frE-tT-CSf" id="5XR-sp-vZO"/>
@@ -103,15 +103,14 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="kdB-Pz-JFy">
                         <barButtonItem key="rightBarButtonItem" style="done" id="gVG-se-psp">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WFc-1G-onv">
-                                <rect key="frame" x="233" y="6" width="71" height="33"/>
+                                <rect key="frame" x="233" y="5" width="71" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Done">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -126,6 +125,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="textView" destination="G3r-7r-Sjg" id="Jg8-Ug-KTq"/>
                         <outlet property="textViewLabel" destination="aaY-h8-lLv" id="QVN-rd-S6T"/>
@@ -136,24 +136,30 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
             <point key="canvasLocation" x="-1434" y="-1255"/>
         </scene>
         <!--Map View Controller-->
-        <scene sceneID="uRc-Vs-380">
+        <scene sceneID="ooP-b2-nhK">
             <objects>
-                <viewController id="59B-tM-7Et" customClass="MapViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vLL-rU-aeP">
+                <viewController id="Ibt-86-mth" customClass="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LhZ-Rd-PcS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="WBJ-m9-lt3">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="8kh-lY-xSz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Mum-kK-YK0">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem enabled="NO" style="plain" id="c8r-lJ-mYV"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <navigationItem key="navigationItem" id="AIj-I6-F3G">
+                    <navigationItem key="navigationItem" id="Yd0-h6-u1f">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="vGa-1B-E22">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="CKh-ex-sUs">
                             <rect key="frame" x="69" y="8" width="183" height="29"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
@@ -162,18 +168,20 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                 <segment title="Satellite"/>
                             </segments>
                             <connections>
-                                <action selector="mapTypeChanged:" destination="59B-tM-7Et" eventType="valueChanged" id="xew-dC-hv8"/>
+                                <action selector="mapTypeChanged:" destination="Ibt-86-mth" eventType="valueChanged" id="NTK-UP-wlt"/>
                             </connections>
                         </segmentedControl>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="mapView" destination="WBJ-m9-lt3" id="RBd-ar-7al"/>
-                        <outlet property="segment" destination="vGa-1B-E22" id="xII-OK-SOG"/>
+                        <outlet property="mapView" destination="8kh-lY-xSz" id="OGh-ik-1Tt"/>
+                        <outlet property="segment" destination="CKh-ex-sUs" id="n7e-4I-749"/>
+                        <outlet property="toolbar" destination="Mum-kK-YK0" id="qH4-O5-MIG"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t8m-Jx-1uB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4OL-uT-bpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1069" y="-1255"/>
+            <point key="canvasLocation" x="-1073" y="-1253"/>
         </scene>
         <!--Table View Controller - Main-->
         <scene sceneID="6yZ-jv-EWP">
@@ -285,7 +293,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <segue destination="59B-tM-7Et" kind="push" id="JWM-Ac-3PX"/>
+                                            <segue destination="Ibt-86-mth" kind="push" id="TvR-lx-WDv"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -331,8 +339,8 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                             <outlet property="delegate" destination="YqW-4A-66i" id="LR3-MX-OAC"/>
                         </connections>
                     </tableView>
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" title="Main" id="YI4-dG-xKe"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwj-om-xTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -405,11 +413,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="8de-Ap-XTn">
                         <barButtonItem key="rightBarButtonItem" style="done" id="v7g-9O-ucR">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d3T-Bf-I71">
-                                <rect key="frame" x="233" y="6" width="71" height="33"/>
+                                <rect key="frame" x="233" y="5" width="71" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Done">
@@ -422,6 +429,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="alertMessageField" destination="QEZ-dU-OK3" id="Zes-Hc-WM1"/>
                         <outlet property="alertNotification" destination="Q5b-Zk-dzk" id="qot-tD-moG"/>
@@ -437,7 +445,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="md5-FR-RmH">
             <objects>
                 <navigationController definesPresentationContext="YES" id="2mA-ge-rjz" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="nWy-uq-1u0">
                         <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -445,7 +452,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
                     </navigationBar>
-                    <toolbar key="toolbar" hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Mpt-MK-2xq">
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Mpt-MK-2xq">
                         <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
@@ -458,48 +465,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="-1806" y="-1921"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CLLocationManager" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CLLocationManager.h"/>
-        </class>
-        <class className="GameViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonPressed"/>
-                <relationship kind="action" name="handlePan:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="outlet" name="wtfLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="MapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="mapTypeChanged:"/>
-                <relationship kind="outlet" name="locationManager" candidateClass="CLLocationManager"/>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
-            </relationships>
-        </class>
-        <class className="TableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
-        </class>
-        <class className="TextViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textViewLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="TimeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TimeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addNotification"/>
-                <relationship kind="action" name="dismissKeyboard"/>
-                <relationship kind="outlet" name="alertMessageField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="alertNotification" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
-            </relationships>
-        </class>
-    </classes>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

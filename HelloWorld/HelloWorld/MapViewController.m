@@ -7,13 +7,16 @@
 //
 
 #import "MapViewController.h"
-#define METERS_PER_MILE 1609.355
 
 @interface MapViewController ()
 
 @end
 
 @implementation MapViewController
+
+@synthesize toolbar, mapView;
+
+
 
 - (IBAction)mapTypeChanged:(id)sender {
     
@@ -35,20 +38,30 @@
     }
 }
 
+
+
+
+
 - (void)viewDidLoad
-{
+{ 
     
-    locationManager = [[CLLocationManager alloc] init];
-    locationManager.distanceFilter = kCLDistanceFilterNone; // location while moving
-    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [super viewDidLoad];    
     
-    [super viewDidLoad];
+    MKUserTrackingBarButtonItem *trackingButton = [[MKUserTrackingBarButtonItem alloc] initWithMapView:mapView];    
     
-    //MKUserTrackingBarButtonItem *buttonItem = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
-    //self.navigationItem.rightBarButtonItem = buttonItem;
+    [self.toolbar setItems:[NSArray arrayWithObject:trackingButton]];
     
+    
+
 	// Do any additional setup after loading the view.
 }
+
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -58,16 +71,22 @@
 
 - (void)viewWillAppear:(BOOL)animated {    
     
-    CLLocationCoordinate2D zoomLocation;
-    zoomLocation.latitude = locationManager.location.coordinate.latitude;
-    zoomLocation.longitude= locationManager.location.coordinate.longitude;
-    
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.3*METERS_PER_MILE, 0.3*METERS_PER_MILE);
-    
-    [_mapView setRegion:viewRegion animated:YES];
-    [_mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
-    [_mapView setUserTrackingMode:MKUserTrackingModeFollowWithHeading];
-    
+//    locationManager = [[CLLocationManager alloc] init];
+//    locationManager.distanceFilter = kCLDistanceFilterNone; // location while moving
+//    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+//    
+//    CLLocationCoordinate2D zoomLocation;
+//    zoomLocation.latitude = locationManager.location.coordinate.latitude;
+//    zoomLocation.longitude= locationManager.location.coordinate.longitude;
+//
+//    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.3, 0.3);
+//    
+//    [_mapView setRegion:viewRegion animated:YES];
+//    [_mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+//    [_mapView setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:YES];
+
 }
+
+
 
 @end

@@ -29,10 +29,7 @@
     audioPlayer.volume = 0.5;
 	audioPlayer.numberOfLoops = -1;
 	
-	if (audioPlayer == nil)
-		NSLog([error description]);
-	else
-		[audioPlayer play];    
+	[audioPlayer play];    
     
 	// Do any additional setup after loading the view, typically from a nib.       
     
