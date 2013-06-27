@@ -47,18 +47,48 @@
     
     [super viewDidLoad];    
     
-    MKUserTrackingBarButtonItem *trackingButton = [[MKUserTrackingBarButtonItem alloc] initWithMapView:mapView];    
+    MKUserTrackingBarButtonItem *trackingButton = [[MKUserTrackingBarButtonItem alloc] initWithMapView:mapView];
+        
+  
+    [self.toolbar setItems:[NSArray arrayWithObject:trackingButton]animated:YES];
+
     
-    [self.toolbar setItems:[NSArray arrayWithObject:trackingButton]];
+//    switch (mapView.userTrackingMode) {
+//        case 0:
+//            NSLog(@"test");
+//            [mapView setUserTrackingMode:MKUserTrackingModeNone]; 
+//            break;
+//        case 1:
+//            NSLog(@"test2");
+//            [mapView setUserTrackingMode:MKUserTrackingModeFollow];
+//            break;
+//        case 2:
+//            NSLog(@"test3");
+//            [mapView setUserTrackingMode:MKUserTrackingModeFollowWithHeading];
+//            break;
+//        default:
+//            break;
+//    }
     
+//    if (mapView.userTrackingMode == 0) {
+//        
+//        [mapView setUserTrackingMode:MKUserTrackingModeNone];        
+//    }
+//    
+//    if (mapView.userTrackingMode == 1) {
+//        
+//        [mapView setUserTrackingMode:MKUserTrackingModeFollow];
+//    }
+//    
+//    if (mapView.userTrackingMode == 2) {
+//        
+//        [mapView setUserTrackingMode:MKUserTrackingModeFollowWithHeading];
+//    }
     
+
 
 	// Do any additional setup after loading the view.
 }
-
-
-
-
 
 
 
