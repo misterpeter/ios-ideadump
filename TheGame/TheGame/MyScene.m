@@ -30,14 +30,11 @@
         
         emitter.position = location;
         SKAction *action = [SKAction fadeAlphaTo:0 duration:2];
-        [emitter runAction:action];
+        [emitter runAction:action];           
         
+        SKAction *action2 = [SKAction rotateByAngle:M_PI duration:1];
         
-        
-        
-//        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-//        
-//        [emitter runAction:[SKAction repeatActionForever:action]];
+        [emitter runAction:[SKAction repeatActionForever:action2]];
         
         [self addChild:emitter];
     }
