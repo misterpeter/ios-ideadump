@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.9" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2mA-ge-rjz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2mA-ge-rjz">
     <dependencies>
         <development version="5000" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8sa-1L-z0x">
-                                <rect key="frame" x="8" y="148" width="307" height="400"/>
+                                <rect key="frame" x="8" y="147.99999954677577" width="307" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Bacon ipsum dolor sit amet hamburger capicola meatball shoulder. Pancetta chuck ground round boudin tongue chicken ribeye frankfurter shoulder meatloaf pastrami bresaola hamburger pork belly. Chuck filet mignon venison ribeye kielbasa beef ribs jowl leberkas chicken rump. Shankle chicken corned beef ham hock tongue. Bresaola bacon pancetta, sirloin chuck ball tip hamburger rump chicken ribeye. Beef spare ribs drumstick swine, andouille tongue short ribs leberkas pork ham hock pork chop sausage shankle shank prosciutto. Pig corned beef hamburger meatloaf andouille shankle ribeye pork belly sirloin sausage ground round.
@@ -94,7 +94,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                 <color key="highlightedColor" cocoaTouchSystemColor="lightTextColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="G3r-7r-Sjg">
-                                <rect key="frame" x="8" y="148" width="307" height="400"/>
+                                <rect key="frame" x="8" y="147.99999954677583" width="307" height="400"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -112,9 +112,6 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="saveText" destination="bPg-EH-MHf" eventType="touchUpInside" id="jbW-aL-BTH"/>
@@ -160,7 +157,7 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                     <navigationItem key="navigationItem" id="Yd0-h6-u1f">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="CKh-ex-sUs">
-                            <rect key="frame" x="69" y="8" width="183" height="29"/>
+                            <rect key="frame" x="65" y="8" width="191" height="29"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Map"/>
@@ -196,14 +193,14 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                             <tableViewSection headerTitle="Choose:" id="npq-sP-iW1">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="game" textLabel="it7-7A-tjT" detailTextLabel="jzI-Wi-Rp0" style="IBUITableViewCellStyleSubtitle" id="3ex-9I-BOQ">
-                                        <rect key="frame" x="0.0" y="119" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3ex-9I-BOQ" id="Zuz-hP-gve">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="The Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="it7-7A-tjT">
-                                                    <rect key="frame" x="15" y="4" width="82" height="22"/>
+                                                    <rect key="frame" x="15" y="3" width="84" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" none="YES" playsSound="YES" staticText="YES"/>
@@ -213,15 +210,14 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="click it" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jzI-Wi-Rp0">
-                                                    <rect key="frame" x="15" y="26" width="35" height="14"/>
+                                                    <rect key="frame" x="15" y="25" width="36" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="vXZ-lx-hvc" kind="push" id="RBx-fW-0Ur"/>
                                         </connections>
@@ -231,14 +227,14 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                             <tableViewSection id="gmb-xH-xMg">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bacon" textLabel="fml-u2-a6i" detailTextLabel="a7N-dG-Gyy" style="IBUITableViewCellStyleSubtitle" id="82M-z4-kBh">
-                                        <rect key="frame" x="0.0" y="184" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="183" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="82M-z4-kBh" id="PqH-8c-7sw">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Text Editor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fml-u2-a6i">
-                                                    <rect key="frame" x="15" y="4" width="82" height="22"/>
+                                                    <rect key="frame" x="15" y="3" width="86" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" none="YES" playsSound="YES" staticText="YES"/>
@@ -248,15 +244,14 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="text view" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a7N-dG-Gyy">
-                                                    <rect key="frame" x="15" y="26" width="49" height="14"/>
+                                                    <rect key="frame" x="15" y="25" width="50" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="bPg-EH-MHf" kind="push" id="597-0k-R9K"/>
                                         </connections>
@@ -266,14 +261,14 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                             <tableViewSection id="TUR-UB-oPy">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ph1" textLabel="Xb8-cA-MVv" detailTextLabel="zlz-n0-Mi2" style="IBUITableViewCellStyleSubtitle" id="rEI-dt-mNR">
-                                        <rect key="frame" x="0.0" y="249" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="247" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rEI-dt-mNR" id="VfA-L2-dkG">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Where am I" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xb8-cA-MVv">
-                                                    <rect key="frame" x="15" y="4" width="89" height="22"/>
+                                                    <rect key="frame" x="15" y="3" width="92" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" none="YES" playsSound="YES" staticText="YES"/>
@@ -283,15 +278,14 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="map view" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zlz-n0-Mi2">
-                                                    <rect key="frame" x="15" y="26" width="53" height="14"/>
+                                                    <rect key="frame" x="15" y="25" width="54" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Ibt-86-mth" kind="push" id="TvR-lx-WDv"/>
                                         </connections>
@@ -301,14 +295,14 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                             <tableViewSection id="PaS-gW-hMo">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ph1" textLabel="lek-yU-uBx" detailTextLabel="Jaj-Uq-jdu" style="IBUITableViewCellStyleSubtitle" id="uM8-5K-jMx">
-                                        <rect key="frame" x="0.0" y="314" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="311" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uM8-5K-jMx" id="aro-uX-a1M">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Timer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lek-yU-uBx">
-                                                    <rect key="frame" x="15" y="4" width="44" height="22"/>
+                                                    <rect key="frame" x="15" y="3" width="46" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" none="YES" playsSound="YES" staticText="YES"/>
@@ -318,15 +312,14 @@ Fatback filet mignon pastrami turkey salami frankfurter sirloin ribeye beef cow 
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="notification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jaj-Uq-jdu">
-                                                    <rect key="frame" x="15" y="26" width="61" height="14"/>
+                                                    <rect key="frame" x="15" y="25" width="62" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="QCj-yX-aa3" kind="push" id="2Jo-ZC-H1A"/>
                                         </connections>
@@ -396,15 +389,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6g7-HF-Pcp">
-                                <rect key="frame" x="123" y="435" width="75" height="44"/>
+                                <rect key="frame" x="100" y="435" width="120" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Start Timer">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="addNotification" destination="QCj-yX-aa3" eventType="touchUpInside" id="dR6-T0-ibK"/>
@@ -465,49 +455,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="-1806" y="-1921"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CLLocationManager" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CLLocationManager.h"/>
-        </class>
-        <class className="GameViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonPressed"/>
-                <relationship kind="action" name="handlePan:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="outlet" name="wtfLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="MapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="mapTypeChanged:"/>
-                <relationship kind="outlet" name="locationManager" candidateClass="CLLocationManager"/>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
-            </relationships>
-        </class>
-        <class className="TableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
-        </class>
-        <class className="TextViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TextViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="textViewLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="TimeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TimeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addNotification"/>
-                <relationship kind="action" name="dismissKeyboard"/>
-                <relationship kind="outlet" name="alertMessageField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="alertNotification" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
-            </relationships>
-        </class>
-    </classes>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
